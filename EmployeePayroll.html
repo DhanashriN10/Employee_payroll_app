@@ -1,5 +1,5 @@
 
-//Ability to create an Employee Payroll System UI 
+<!--Ability to create an Employee Payroll System UI--> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +24,7 @@
 
 
 
-//UC 2 – Employee Payroll Form with Header and Name
+<!--UC 2 – Employee Payroll Form with Header and Name-->
 	<div class="form-content">
 		<form class="form" action="#" onsubmit="save();return false">
 			<div class="form-head">
@@ -38,7 +38,7 @@
 	</div>
 
 
-//UC 3 – Specify Profile Pic to the Employee Payroll App
+<!--UC 3 – Specify Profile Pic to the Employee Payroll App-->
 	<div class="row-content">
 		<label class="label text" for="profile">Profile Image</label>
 		<div class="profile-radio-content">
@@ -63,7 +63,7 @@
 
 
 
-//UC 4 – Employee Payroll Form with Gender, Department and Salary Range
+<!--UC 4 – Employee Payroll Form with Gender, Department and Salary Range-->
 	<div class="row-content">
 		<label class="label text" for="gender">Gender</label>
 		<div>
@@ -96,7 +96,7 @@
 
 
 
-//UC 5 – Employee Payroll Form with start date
+<!--UC 5 – Employee Payroll Form with start date-->
 	<div class="row-content">
 		<label class="label text" for="startDate">Start Date</label>
 		<div>
@@ -154,6 +154,20 @@
 				<option value="2017">2017</option>
 				<option value="2016">2016</option>
 			</select>
+		</div>
+	</div>
+
+
+	<!--UC6- Ability to add Notes as well as cancel, reset and submit button so as to do some action on form entry-->
+	<div class="row-content">
+		<label class="label text" for="notes">Notes</label>
+		<textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px"></textarea>
+	</div>
+	<div class="buttonParent">
+		<a href="EmployeePayroll.html" class="resetButton button CancelButton">Cancel</a>
+		<div class="submit-reset">
+			<button type="submit" class="button submitButton" id="submitButton">Submit</button>
+			<button type="reset" class="resetButton button">Reset</button>
 		</div>
 	</div>
 </body>
