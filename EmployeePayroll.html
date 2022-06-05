@@ -1,4 +1,5 @@
 //UC 1 – Employee Payroll App with Logo
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="employee.css">
 	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="style2.css">
 </head>
 <body>
 	<header class="header-content header">
@@ -22,6 +24,7 @@
 
 //UC2:- Ability to create a Form Header and the Input Text Element for Name	
 
+
 	<div class="form-content">
 		<form class="form" action="#" onsubmit="save();return false">
 			<div class="form-head">
@@ -32,6 +35,30 @@
 				<input class="input" type="text" id="name"  name="name" placeholder="Your Name...." required>
 			</div>
 		</form>
+	</div>
+
+  //UC 3 – Specify Profile Pic to the Employee Payroll App
+
+	<div class="row-content">
+		<label class="label text" for="profile">Profile Image</label>
+		<div class="profile-radio-content">
+			<label>
+				<input type="radio" id="profile1" name="profile" value="./assets/Profile-Image/Ellipse -3.png" required>
+				<img class="profile" id="image1" src="./assets/Profile-Image/Ellipse -3.png">
+			</label>
+			<label>
+				<input type="radio" id="profile2" name="profile" value="./assets/Profile-Image/Ellipse -1.png" required>
+				<img class="profile" id="image1" src="./assets/Profile-Image/Ellipse -1.png">
+			</label>
+			<label>
+				<input type="radio" id="profile3" name="profile" value="./assets/Profile-Image/Ellipse -8.png" required>
+				<img class="profile" id="image1" src="./assets/Profile-Image/Ellipse -8.png">
+			</label>
+			<label>
+				<input type="radio" id="profile4" name="profile" value="./assets/Profile-Image/Ellipse -7.png" required>
+				<img class="profile" id="image1" src="./assets/Profile-Image/Ellipse -7.png">
+			</label>
+		</div>
 	</div>
 </body>
 </html>
