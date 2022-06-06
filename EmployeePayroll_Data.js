@@ -1,6 +1,6 @@
 //  UC 9 -  On Form Submit populate the Employee Payroll Data 
 
-class EmployeePayrollData {
+class EmployeePayrollData1 {
 
     constructor(...params) {
         this.name = params[0];

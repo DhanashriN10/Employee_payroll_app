@@ -113,3 +113,12 @@ select{
         align-items: flex-start;
  }
 }
+
+
+/*Day44 UC 2 – On Document Load Set Event Listeners*/
+error-output{
+	margin-left: 10px;
+	font-size: 12px;
+	font-style: italic;
+	color: red;
+}

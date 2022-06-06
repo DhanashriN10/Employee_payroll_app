@@ -26,13 +26,15 @@
 
 <!--UC 2 – Employee Payroll Form with Header and Name-->
 	<div class="form-content">
-		<form class="form" action="#" onsubmit="save();return false">
+		<form class="form" action="#" onsubmit="resetForm()" onsubmit="save()">
+			<!--Day44 UC2 -->
 			<div class="form-head">
 				Employee Payroll Form
 			</div>
 			<div class="row-content">
 				<label class="label text" for="name">Name</label>
 				<input class="input" type="text" id="name"  name="name" placeholder="Your Name...." required>
+				<error-output class="text-error" for="text"></error-output>
 			</div>
 	
 
@@ -177,6 +179,18 @@
 <!--<script src="EmployeePayroll_Data.js"></script>-->
 
 <script defer src="EmployeePayroll.js"></script>
+
+
+<!--<div id="formId" class="form-content">
+	<form class="form" action="#" onreset="resetForm()" onsubmit="save()">
+		<div class="form-head">Employee Payroll form</div>
+		<div class="row-content">
+			<label class="label text" for="name">Name</label>
+			<input class="input" type="text" id="name" name="name" placeholder="Your Name...." required>
+			<error-output class="text-error" for="text"></error-output>
+		</div>
+	</form>
+</div>-->
 
 </div>		
 </form>
