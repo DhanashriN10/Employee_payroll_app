@@ -1,4 +1,4 @@
-
+/*Day45 UC 4 – Display Employee Details in Tabular Format using Template Literals*/
 
 window.addEventListener('DOMContentLoaded', (event) => {
     createInnerHtml();
