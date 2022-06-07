@@ -41,6 +41,7 @@ window.addEventListener('DOMContentLoaded',(event)=>{
 const save=()=>{
     try{
         let employeePayrollData=createEmployeePayroll();
+        createAndUpdateStorage(employeePayrollData);
     }
     catch(e){
         return;
@@ -55,10 +56,10 @@ const createEmployeePayroll=()=>{
         setTextValue('.text-error',e);
         throw e;
     }
-    employeePayrollData.profilePic=getSelectedValues('[name=profile]').pop();
-    employeePayrollData.gender=getSelectedValues.('[name=gender]').pop();
+    employeePayrollData.profileImage=getSelectedValues('[name=profile]').pop();
+    employeePayrollData.gender=getSelectedValues('[name=gender]').pop();
     employeePayrollData.department=getSelectedValues('[name=department]');
-    employeePayrollData.salary=getInputValueById.('#salary');
+    employeePayrollData.salary=getInputValueById('#salary');
     employeePayrollData.note=getInputValueById('#notes');
     let date=getInputValueById('#day')+" "+getInputValueById('#month')+" "+getInputValueById('#year');
 
@@ -85,3 +86,22 @@ const getInputElementById=(id)=>{
     let value=document.getInputElementById(id).value;
     return value;
 }
+
+/*Day44 UC 4 – Saving Employee Payroll to Local Storage*/
+
+function createAndUpdateStorage(employeePayrollData){
+    let employeePayrollList=JSON.parse(localStorage.getItem("EmployeePayrollList"));
+
+    if(employeePayrollList!=undefined){
+        employeePayrollList.push(employeePayrollData);
+    }
+    else
+    {
+        employeePayrollList=[employeePayrollData]
+    }
+    alert(employeePayrollList.toString());
+    localStorage.selItem("EmployeePayrollList",JSON.stringify(employeePayrollList))
+}
+
+
+
