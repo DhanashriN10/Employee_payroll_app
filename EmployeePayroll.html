@@ -13,7 +13,7 @@
 
 	<script defer src="payroll_form.js"></script>
 <!--<script src="EmployeePayroll_Data.js"></script>-->
-
+ 
 <script defer src="EmployeePayroll.js"></script>
 </head>
 <body>
@@ -154,13 +154,16 @@
 				<option value="Dec">December</option>
 			</select>
 			<select id="year" name="Year">
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
 				<option value="2020">2020</option>
-				<option value="2019">2029</option>
+				<option value="2019">2019</option>
 				<option value="2018">2018</option>
 				<option value="2017">2017</option>
 				<option value="2016">2016</option>
 			</select>
 		</div>
+		<error-output class="date-error" for="text"></error-output>
 	</div>
 
 
@@ -170,7 +173,7 @@
 		<textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px"></textarea>
 	</div>
 	<div class="buttonParent">
-		<a href="EmployeePayroll.html" class="resetButton button CancelButton">Cancel</a>
+		<a href="Home.html" class="resetButton button CancelButton">Cancel</a>
 		<div class="submit-reset">
 			<button type="submit" class="button submitButton" id="submitButton">Submit</button>
 			<button type="reset" class="resetButton button">Reset</button>
