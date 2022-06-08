@@ -8,10 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Employee Payroll App</title>
 	<link rel="stylesheet" type="text/css" href="home.css">
-	<link href="https://fonts.googleapis.com?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 	<script defer src="home.js"></script>
+	<script src="site_Properties.js"></script>
 	
 </head>
 <body>
@@ -28,7 +29,7 @@
 
 
    <!--Day45 UC 2 – Employee Payroll Form with Header and Name-->
-  <div class="main-content">
+  <!--<div class="main-content">-->
   	<div class="header-content">
   		<div class="emp-detail-text">
   			Employee Details<div class="emp-count">10</div>
@@ -39,7 +40,7 @@
   </div>
 
   <!--Day 45:UC 3 – Display Employee Details in Tabular Format-->
-  <div class ="table-main">
+  <!--<div class ="table-main">
   <table id="display" class="table">
   	<tr>
   		<th>Profile</th>
@@ -63,7 +64,12 @@
   				<img id="1" alt="edit" onclick="update(this)" src="C:\Users\91992\Documents\HTML\EmployeePayrollApp\assets\icons\create-black-18dp.svg">
   			</td>
   	</tr>
-  </table>
+  </table>-->
+
+  <div class="table-main">
+            <table id="table-display" class="table"></table>
+        </div>
+</div>
   </div>
 </body>
 </html>
